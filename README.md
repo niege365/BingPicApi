@@ -7,14 +7,14 @@
 ## 图片：
 > `https://cdn.jsdelivr.net/gh/ITJoker233/BingPicApi/pic/日期.png`
 
-> ![](https://cdn.jsdelivr.net/gh/ITJoker233/BingPicApi/pic/20210818.png)
+![](https://cdn.jsdelivr.net/gh/love2wind/BingPicApi/pic/20210817.png)
 
 ```
-https://cdn.jsdelivr.net/gh/ITJoker233/BingPicApi/pic/20210817.png
+https://cdn.jsdelivr.net/gh/love2wind/BingPicApi/pic/20210817.png
 ```
 
 ## Json：
-> `https://cdn.jsdelivr.net/gh/ITJoker233/BingPicApi/json/日期.json`
+> `https://cdn.jsdelivr.net/gh/love2wind/BingPicApi/json/日期.json`
 ```
-https://cdn.jsdelivr.net/gh/ITJoker233/BingPicApi/json/20210817.json
+https://cdn.jsdelivr.net/gh/love2wind/BingPicApi/json/20210817.json
 ```
