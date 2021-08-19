@@ -12,6 +12,8 @@ def GetPic():
     pic = get(pic_url, stream=True)
     if(pic.status_code == 200):
         open(r'./pic/{0}.png'.format(start_date), 'wb').write(pic.content)
+        shutil.copyfile(r'./images/{start_date}.png',
+        				r'./images/latest.png')
         print('Create Image Success!')
     else:
         print('Create Image Faild!')
