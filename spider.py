@@ -2,7 +2,7 @@ import json
 from requests import get
 
 def GetPic():
-    api_url = r'https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1'
+    api_url = r'https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US'
     api = get(api_url)
     json_data = json.loads(api.text)
     pic_url = r'https://www.bing.com{0}'.format(json_data['images'][0]['url'])
@@ -12,8 +12,8 @@ def GetPic():
     pic = get(pic_url, stream=True)
     if(pic.status_code == 200):
         open(r'./pic/{0}.png'.format(start_date), 'wb').write(pic.content)
-        shutil.copyfile(r'./pic/{start_date}.png',
-            r'./pic/latest.png')
+            shutil.copyfile(f'./pic/{start_date}.png',
+                            f'./pic/latest.png')
         print('Create Image Success!')
     else:
         print('Create Image Faild!')
